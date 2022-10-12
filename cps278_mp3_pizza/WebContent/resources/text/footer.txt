@@ -1,0 +1,45 @@
+<div data-quid="page-footer" class="css-17w5fia ebs8av58">
+	<footer class="css-1cer8r7 ebs8av52">
+		<div data-quid="footer__legal" class="css-dt0cjt ebs8av50">
+			<p>Any Delivery Charge is not a tip paid to your driver. Please
+				reward your driver for delivery. Drivers carry less than $20. You
+				must ask for this limited time offer. Minimum purchase required
+				for delivery. Delivery charge and tax may apply. Prices,
+				participation, delivery area and charges may vary. Returned
+				checks, along with the state's maximum allowable returned check
+				fee, may be electronically presented to your bank. "Coca-Cola" and
+				the Contour Bottle design are registered trademarks of The
+				Coca-Cola Company. The Ice Breakers® Mints trademark and trade
+				dress are used under license. Apple, the Apple logo and iPad are
+				trademarks of Apple Inc., registered in the U.S. and other
+				countries. App Store is a service mark of Apple Inc. Android is a
+				trademark of Google Inc. Windows® Phone is a registered trademark
+				of the Microsoft group of companies.</p>
+			<p>Pizza Castle's pizza made with a Gluten Free Crust is
+				prepared in a common kitchen with the risk of gluten exposure.
+				Therefore, Pizza Castle's DOES NOT recommend this pizza for
+				customers with celiac disease. Customers with gluten sensitivities
+				should exercise judgment in consuming this pizza.</p>
+			<p>
+				Pizza Castle's menu items are prepared in stores using a common
+				kitchen. As a result there may be cross contact between allergens.
+				Customers with an allergen concern should exercise judgement in
+				consuming Pizza Castle's menu items. For a listing of allergens
+				that may appear in Pizza Castle's stores, please visit our <a
+					class="no-underline"
+					href="/en/pages/content/nutritional/allergen-info">Allergen
+					Page.</a>
+			</p>
+			<p>Our Guarantee: If you are not completely satisfied with your
+				Pizza Castle's experience, we will make it right or refund your
+				money.</p>
+			<p>Pizza Castle's Carryout Insurance program is only available
+				to carryout customers who return their damaged order, uneaten, in
+				its original packaging (inclusive of an order label or receipt) to
+				the store from which it was originally purchased within at least
+				two hours of the time of purchase. Damaged orders will be replaced
+				with identical products and no substitutions will be permitted.
+				This is a limited time offer and store participation may vary.</p>
+		</div>
+	</footer>
+</div>
