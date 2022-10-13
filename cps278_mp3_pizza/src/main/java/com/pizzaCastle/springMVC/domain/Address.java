@@ -3,15 +3,18 @@ package com.pizzaCastle.springMVC.domain;
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.Pattern;
 
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
+
 import com.pizzaCastle.springMVC.service.AddressService;
 
-public class Address {
-	
+@Component
+public class Address extends Order {
 
 	@NotBlank(message="This field is required")
 	private String addressType;
 	@NotBlank(message="This field is required")
-	private String streetAddress;
+	private String street;
 	@NotBlank(message="This field is required")
 	private String city;
 	@NotBlank(message="This field is required")
@@ -27,11 +30,11 @@ public class Address {
 		this.addressType = addressType;
 	}
 	
-	public String getstreetAddress() {
-		return streetAddress;
+	public String getStreet() {
+		return street;
 	}
-	public void setStreet(String streetAddress) {
-		this.streetAddress = streetAddress;
+	public void setStreet(String street) {
+		this.street = street;
 	}
 	public String getCity() {
 		return city;
@@ -54,6 +57,6 @@ public class Address {
 	
 	@Override
 	public String toString() {
-		return addressType + ": " + streetAddress + ",\n" + city + ", " + state + "\n" + zipcode;
+		return addressType + ": " + street + ",\n" + city + ", " + state + "\n" + zipcode;
 	}
 }

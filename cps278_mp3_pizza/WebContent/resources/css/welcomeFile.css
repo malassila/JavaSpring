@@ -1,15 +1,23 @@
+body, html {
+	background: #222222;
+	color: white;
+}
+
+.main{
+	
+}
 .form-style-7{
-	max-width:400px;
+	max-width:25vw;
 	margin:50px auto;
-	background:#fff;
 	border-radius:2px;
+	border-color: gray;
 	padding:20px;
 	font-family: Georgia, "Times New Roman", Times, serif;
 }
 .footer-1{
-	max-width:66vw;
+	max-width:75vw;
 	margin:50px auto;
-	background:#fff;
+	background:#222222;
 	border-radius:2px;
 	padding:20px;
 	font-family: Georgia, "Times New Roman", Times, serif;
@@ -19,7 +27,7 @@
 	text-align: center;
 	padding: 0;
 	margin: 0px 0px 20px 0px;
-	color: #5C5C5C;
+	color: white;
 	font-size:x-large;
 }
 .form-style-7 ul{
@@ -43,7 +51,7 @@
 	display: block;
 	float: left;
 	margin-top: -19px;
-	background: #FFFFFF;
+	background: #222222;
 	height: 14px;
 	padding: 2px 5px 2px 5px;
 	color: #B9B9B9;
@@ -63,6 +71,7 @@
 .form-style-7 textarea,
 .form-style-7 select 
 {
+	background: #222222;
 	box-sizing: border-box;
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
@@ -74,23 +83,26 @@
 	line-height: 25px;
 	font-size: 16px;
 	padding: 0;
-	font-family: Georgia, "Times New Roman", Times, serif;
+	font-family: Arial, Helvetica, sans-serif;
 }
-.form-style-7 input[type="text"]:focus,
-.form-style-7 input[type="date"]:focus,
-.form-style-7 input[type="datetime"]:focus,
-.form-style-7 input[type="email"]:focus,
-.form-style-7 input[type="number"]:focus,
-.form-style-7 input[type="search"]:focus,
-.form-style-7 input[type="time"]:focus,
-.form-style-7 input[type="url"]:focus,
-.form-style-7 input[type="password"]:focus,
-.form-style-7 textarea:focus,
-.form-style-7 select:focus 
+.form-style-7 input[type="text"]:hover,
+.form-style-7 input[type="date"]:hover,
+.form-style-7 input[type="datetime"]:hover,
+.form-style-7 input[type="email"]:hover,
+.form-style-7 input[type="number"]:hover,
+.form-style-7 input[type="search"]:hover,
+.form-style-7 input[type="time"]:hover,
+.form-style-7 input[type="url"]:hover,
+.form-style-7 input[type="password"]:hover,
+.form-style-7 textarea:hover,
+.form-style-7 select:hover 
 {
+	background: #223233;
+	color: white;
+	border-radius: 10;
 }
 .form-style-7 li > span{
-	background: #F3F3F3;
+	background: #222222;
 	display: block;
 	padding: 3px;
 	margin: 0 -9px -9px -9px;
@@ -113,6 +125,6 @@
 }
 .form-style-7 input[type="submit"]:hover,
 .form-style-7 input[type="button"]:hover{
-	background: #6B9FFF;
+	background: rgb(0,255,0);
 	color:#fff;
 }

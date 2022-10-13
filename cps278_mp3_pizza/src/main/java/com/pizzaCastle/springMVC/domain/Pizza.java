@@ -1,7 +1,22 @@
 package com.pizzaCastle.springMVC.domain;
 
+import java.util.Arrays;
+
+import org.springframework.stereotype.Component;
+
+@Component
 public class Pizza {
 	private String size;
+	private String[] toppings;
+	
+	public Pizza() {
+		
+	}
+	
+	public Pizza(String size, String[] toppings) {
+		this.size = size;
+		this.toppings = toppings;
+	}
 	
 	public String getSize() {
 		return size;
@@ -15,6 +30,10 @@ public class Pizza {
 	public void setToppings(String[] toppings) {
 		this.toppings = toppings;
 	}
-	private String[] toppings;
+
+	@Override
+	public String toString() {
+		return "Pizza [size=" + size + ", toppings=" + Arrays.toString(toppings) + "]";
+	}
 
 }

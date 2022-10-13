@@ -2,17 +2,21 @@ package com.pizzaCastle.springMVC.domain;
 
 import javax.validation.constraints.NotBlank;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 @Component
-public class Customer {
+public class Customer extends Order {
 	
 	@NotBlank
 	private String firstName;
 	@NotBlank
 	private String lastName;
-	private Address address;
 
+
+	public Customer() {
+		
+	}
 	public String getFirstName() {
 		return firstName;
 	}
@@ -25,12 +29,11 @@ public class Customer {
 	public void setLastName(String lastName) {
 		this.lastName = lastName;
 	}
-	public Address getAddress() {
-		return address;
+	@Override
+	public String toString() {
+		return firstName + " " + lastName;
 	}
-	public void setAddress(Address address) {
-		this.address = address;
-	}
+
 
 	
 
