@@ -10,14 +10,15 @@
 <meta name="viewport" content="width=device-width, initial-scale=1"
 	id="dpzviewport" />
 </head>
+
 <style>
+
 body, html {
 	background: #222222;
 	color: white;
 	
 }
 .container {
-   background: red;
    width: 100%;
    display: flex;
    flex-direction: row;
@@ -27,7 +28,6 @@ body, html {
    text-align: center;
 }
 .radio {
-   background: blue;
    width: 50vw;
    display: flex;
    flex-direction: row;
@@ -37,8 +37,8 @@ body, html {
 }
 .checkbox {
 	width: 20vw;
-    -webkit-row-count: 3; /* Chrome, Safari, Opera */
-    -moz-row-count: 3; /* Firefox */
+    -webkit-row-count: 3; 
+    -moz-row-count: 3; 
     row-count: 3;
 }
 .toppings {
@@ -48,7 +48,7 @@ body, html {
 	flex-direction: column;
 	flex-wrap: wrap;
 	
-   align-items: stretch;
+   align-items: center;
 	justify-content: space-around;
 	max-height: 30vw;
 	background: #222222;

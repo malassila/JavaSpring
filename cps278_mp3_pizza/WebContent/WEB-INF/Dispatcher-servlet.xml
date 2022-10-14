@@ -18,4 +18,7 @@
 	</bean>
 	<mvc:resources location="/resources/" mapping="/resources/**"></mvc:resources>
 	
+	<bean id="pizza" class="com.pizzaCastle.springMVC.domain.Pizza"
+		scope="prototype">
+	</bean>
 </beans>

@@ -140,15 +140,20 @@
         <div id="logo" class="media" data-src="logo.png" src="./logo.png"></div>
 
     </header>
-    <p>GST Number : 4910487129047124</p>
+    <p>Customer Name: ${order.customer}</p>
+    <p>Address: <br>${order.address}</p>
+    <p>Number of pizza's: ${order.pizzaID}</p>
+    <p>Order Type: ${order.orderType}</p>
     <table class="bill-details">
         <tbody>
             <tr>
-                <td>Date : <span>1</span></td>
+            
+			
+			
+                <td>Date : <span><script> document.write(new Date().toLocaleDateString()); </script></span></td>
                 <td>Time : <span>2</span></td>
             </tr>
             <tr>
-                <td>Table #: <span>3</span></td>
                 <td>Bill # : <span>4</span></td>
             </tr>
             <tr>
@@ -168,33 +173,21 @@
         </thead>
        
         <tbody>
+
             <tr>
-                <td>${pizzas}</td>
-                <td>1</td>
-                <td class="price">200.00</td>
-                <td class="price">200.00</td>
-            </tr>
-            <tr>
-                <td>${order.pizzaID}</td>
-                <td>2</td>
-                <td class="price">300.00</td>
-                <td class="price">600.00</td>
-            </tr>
-            <tr>
-                <td>Classic mojito</td>
+                <td>
+                	<c:forEach items="${order.pizzas}" var="pizza">
+         				<b>ID:</b><br>
+         				 &emsp;&emsp;<c:out value = "${pizza}"/><br>
+       
+      				</c:forEach></td>
                 <td>1</td>
                 <td class="price">800.00</td>
                 <td class="price">800.00</td>
-            </tr>
-            <tr>
-                <td>Non-Veg Ciabatta S/W</td>
-                <td>1</td>
-                <td class="price">500.00</td>
-                <td class="price">500.00</td>
             </tr>
             <tr>
                 <td colspan="3" class="sum-up line">Subtotal</td>
-                <td class="line price">12112.00</td>
+                <td class="line price">2.00</td>
             </tr>
             <tr>
                 <td colspan="3" class="sum-up">CGST</td>
@@ -206,11 +199,9 @@
             </tr>
             <tr>
                 <th colspan="3" class="total text">Total</th>
-                <th class="total price">12132.00</th>
+                <th class="total price">32.00</th>
             </tr>
-            <c:forEach items="${pizzas}" var="pizza">
-         			Item <c:out value = "${pizza}"/><p>
-      				</c:forEach>
+
         </tbody>
     </table>
     <section>
@@ -222,8 +213,8 @@
         </p>
     </section>
     <footer style="text-align:center">
-        <p>Technology Partner Dotworld Technologies</p>
-        <p>www.dotworld.in</p>
+        
+        <p>www.pizzacastle.com/customerCare</p>
     </footer>
 </body>
 

@@ -2,9 +2,12 @@ package com.pizzaCastle.springMVC.domain;
 
 import java.util.Arrays;
 
+import org.springframework.beans.factory.config.ConfigurableBeanFactory;
+import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Component;
 
-@Component
+@Component()
+@Scope(ConfigurableBeanFactory.SCOPE_PROTOTYPE)
 public class Pizza {
 	private String size;
 	private String[] toppings;

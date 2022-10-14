@@ -1,21 +1,23 @@
 package com.pizzaCastle.springMVC.domain;
 
 import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.Map;
 
 import org.springframework.stereotype.Component;
 
 @Component
 public class Order {
 	private String orderType;
-	private Pizza[] pizzas;
+
+	private ArrayList<Pizza> pizzas;
 	private Pizza pizza;
 	private Customer customer;
 	private Address address;
-	private int pizzaID = 1;
-
+	private int pizzaID = 0;
 
 	public Order() {
-		
+
 	}
 
 	public Order(Customer customer, Address address, Pizza pizza) {
@@ -27,10 +29,11 @@ public class Order {
 	public int getPizzaID() {
 		return pizzaID;
 	}
-	
+
 	public void setPizzaID(int pizzaID) {
 		this.pizzaID = pizzaID;
 	}
+
 	public Customer getCustomer() {
 		return customer;
 	}
@@ -54,26 +57,35 @@ public class Order {
 	public void setAddress(Address address) {
 		this.address = address;
 	}
-	
+
 	public void setPizza(Pizza pizza) {
-			this.pizza = pizza;
+//			this.pizza = new Pizza();
+		this.pizza = pizza;
 	}
 
 	public Pizza getPizza() {
 		return pizza;
 	}
 
-	public Pizza[] getPizzas() {
+	public ArrayList<Pizza> getPizzas() {
 		return pizzas;
 	}
 
-	public void setPizzas(Pizza[] pizzas) {
+	public void setPizzas(ArrayList<Pizza> pizzas) {
 		this.pizzas = pizzas;
 	}
 
-//	public void addPizza(Pizza pizza) {
-//		this.pizzas[pizzaID] = pizza;
-//	}
+
+	public void addPizza(Pizza pizza) {
+		try {
+			this.pizzas.add(pizza);
+		} catch (NullPointerException e) {
+			pizzas = new ArrayList<Pizza>();
+			this.pizzas.add(pizza);
+
+		}
+	}
+
 
 
 }

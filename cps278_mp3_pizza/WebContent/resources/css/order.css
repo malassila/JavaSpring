@@ -2,13 +2,16 @@ body, html {
 	background-image: url("file:/C:\Users\Matt\Desktop\CPS278\cps278_mp3_pizza\WebContent\resources\images\PizzaBg.jpg");
 	background: #222222;
 	color: white;
-	display: inline-block;
+	display: flex;
+	flex-wrap: wrap;
 }
 .buttons {
-	display: block;
+	display: flex;
+	justify-content: flex-end;
 }
 .radio{
-  display: block;
+  display: flex;
+  align-items: stretch;
   position: relative;
   margin: 40px auto;
   height: 10vw;
@@ -23,7 +26,7 @@ body, html {
 }
 .checkboxes{
 	width: 80vw;
-	display: block;
+	display: flex;
 	max-height: 30vw;
 	background: white;
     -webkit-column-count: 6; /* Chrome, Safari, Opera */
@@ -43,6 +46,7 @@ body, html {
 	height: 10px;
 	width: 20vw;
 }
+/*
 ul li{
   color: #AAAAAA;
   display: block;
@@ -54,12 +58,12 @@ ul li{
 }
 ul.checkbox li { 
   border: 1px transparent solid; 
-  display:inline-block;
+  display:flex;
   width:12em;
 }
 
 ul li input[type=radio]{
-  position: absolute;
+  position: relative;
   visibility: hidden;
 }
 
@@ -111,7 +115,6 @@ ul li .check::before {
 	transition: background 0.25s linear;
 	-webkit-transition: background 0.25s linear;
 }
-
 input[type=radio]:checked ~ .check {
   border: 5px solid #0DFF92;
 }
@@ -186,9 +189,7 @@ input[type=check]:checked ~ label{
 	font-weight: bold;
 }
 
-*/
-/* Styles for alert... 
-by the way it is so weird when you look at your code a couple of years after you wrote it XD */
+
 
 .alert {
 	box-sizing: border-box;
@@ -227,6 +228,7 @@ by the way it is so weird when you look at your code a couple of years after you
 	padding:20px;
 	font-family: 'Lato', sans-serif;
 }
+*/
 /*
 .footer-1{
 	max-width:80vw;
